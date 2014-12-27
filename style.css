@@ -647,4 +647,5 @@ object {
   display: block; }
 
 body {
-  background-color: #afa; }
+  width: 80%;
+  margin: 0 auto; }
