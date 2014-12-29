@@ -73,14 +73,16 @@ html {
   /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
   -ms-text-size-adjust: 100%;
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
-  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
   /* Apply a natural box layout model to the document; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */ }
 
 *,
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-  box-sizing: inherit; }
+  -moz-box-sizing: inherit;
+       box-sizing: inherit; }
 
 body {
   background: #fff;
@@ -308,7 +310,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* Addresses appearance set to searchfield in S5, Chrome */
-  box-sizing: content-box; }
+  -moz-box-sizing: content-box;
+       box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-decoration {
   /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
@@ -646,6 +649,14 @@ object {
 .gallery-caption {
   display: block; }
 
-body {
-  width: 80%;
-  margin: 0 auto; }
+/*  =Mobile layout styles-----------------------------------*/
+/*     =Media queries----------------------------------------- */
+@media only screen and (min-width: 48em) {
+  body {
+    width: 80%;
+    margin: 0 auto; } }
+/* WIDESCREEN */
+/* Increased body size for legibility */
+@media only screen and (min-width: 87.5em) {
+  body {
+    font-size: 120%; } }

@@ -107,7 +107,59 @@ and Blueprint http://www.blueprintcss.org/
 --------------------------------------------------------------*/
 @import "media/media";
 
+
+/*  =Mobile layout styles-----------------------------------*/
+
+
+/*     =Media queries----------------------------------------- */
+
+
+
+@media only screen and (min-width: 30em) /* 480px */{
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 37.5em) /* 600px */ {
+
+
+}
+
+
+
+@media only screen and (min-width: 48em) /* 768px */ {
 body	{
         width: 80%;
         margin: 0 auto;
 }
+
+}
+
+
+@media only screen and (min-width: 64em)/* 1024px */ {
+
+
+}
+
+
+@media only screen and (min-width: 78.75em) /* 1260px */  {
+
+
+}
+
+
+
+/* WIDESCREEN */
+
+/* Increased body size for legibility */
+
+@media only screen and (min-width: 87.5em) /* 1400px */ {
+
+     body {font-size:120%;} 
+    
+}
+
