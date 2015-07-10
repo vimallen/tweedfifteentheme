@@ -375,8 +375,8 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
-  width: 100%; }
+  float: right;
+  /* width: 100%; */ }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -399,7 +399,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding-right: 20px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
