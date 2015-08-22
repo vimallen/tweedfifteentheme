@@ -650,6 +650,18 @@ object {
 .gallery-caption {
   display: block; }
 
+.icon-logo {
+  width: 50px;
+  height: 50px;
+  float: left;
+  padding-right: 20px;
+  margin: 20px 0; }
+  .icon-logo > svg {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    vertical-align: middle; }
+
 /*  =Mobile layout styles-----------------------------------*/
 /*     =Media queries----------------------------------------- */
 @media only screen and (min-width: 48em) {
